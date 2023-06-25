@@ -1,32 +1,39 @@
 fun main() {
-    val string = "F2p)v\"y233{0->c}ttelciFc"
-    val stringLenght = string.length
-    val first = string.take(stringLenght / 2)
-    val second = string.takeLast(stringLenght / 2)
-    val firstString9 = encryptFirstHalf(first)
-    val secondString4 = encryptSecondHalf(second)
-    println(firstString9 + secondString4)
 
+    val range = 1..100
+    var sum = 0
+    for (n in range)
+    print(n)
+    var n = 0
+    sum += n
+    print(sum)
 
 }
-
-     fun encryptFirstHalf (first: String): String {
-         val firstString = first.map { char -> char + 1 }.joinToString("")
-         val firstString5 = firstString.replace("5", "s")
-         val firstString6 = firstString5.replace("4", "u")
-         val firstString7 = firstString6.map { char -> char - 3 }.joinToString("")
-         val firstString8 = firstString7.replace("0", "o")
-         return firstString8
-     }
-
-      fun encryptSecondHalf(second: String) : String {
-          val secondString = second.reversed()
-          val secondString2 = secondString.map { char -> char - 4 }.joinToString("")
-          val secondString3 = secondString2.replace("_", " ")
-          return secondString3
-      }
+// дз на 22.06
+//    val string = "F2p)v\"y233{0->c}ttelciFc"
+//    val stringLenght = string.length
+//    val first = string.take(stringLenght / 2)
+//    val second = string.takeLast(stringLenght / 2)
+//    val firstString9 = encryptFirstHalf(first)
+//    val secondString4 = encryptSecondHalf(second)
+//    println(firstString9 + secondString4)
 
 
+//     fun encryptFirstHalf (first: String): String {
+//         val firstString = first.map { char -> char + 1 }.joinToString("")
+//         val firstString5 = firstString.replace("5", "s")
+//         val firstString6 = firstString5.replace("4", "u")
+//         val firstString7 = firstString6.map { char -> char - 3 }.joinToString("")
+//         val firstString8 = firstString7.replace("0", "o")
+//         return firstString8
+//     }
+//
+//      fun encryptSecondHalf(second: String) : String {
+//          val secondString = second.reversed()
+//          val secondString2 = secondString.map { char -> char - 4 }.joinToString("")
+//          val secondString3 = secondString2.replace("_", " ")
+//          return secondString3
+//      }
 
 
 
