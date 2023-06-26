@@ -2,11 +2,10 @@ fun main() {
 
     val range = 1..100
     var sum = 0
-    for (n in range)
-    print(n)
-    var n = 0
-    sum += n
-    print(sum)
+    for (n in range) {
+        sum += n
+    }
+    println(sum)
 
 }
 // дз на 22.06
@@ -34,7 +33,6 @@ fun main() {
 //          val secondString3 = secondString2.replace("_", " ")
 //          return secondString3
 //      }
-
 
 
 //    val x = listOf<String>(f, 2, p, ), V, ", Y, 2, 3, 3, {, 0)
