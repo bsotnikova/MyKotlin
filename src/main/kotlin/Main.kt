@@ -1,13 +1,51 @@
 fun main() {
+    val junior = Tester("Viktor", 1, "нет",20, false,null,
+        1.0, false, true, false, false )
+    val middle = Tester("Olga", 3, "да", 37, true, 0.2,
+        0.8, true, true, true, false )
+    val senior = Tester("Alex", 5, "да", 105,true,0.5,
+        0.5, true, true, true, true )
 
-    val range = 1..100
-    var sum = 0
-    for (n in range) {
-        sum += n
-    }
-    println(sum)
+    middle.writeTests(20)
+        println()
+
+
+    val develop1 = Development("Sergey", arrayOf("java","kotlin"), "meddle")
+    val tastId = develop1.giveTask()
+    middle.fixingTask(tastId)
+    val hr1 = HR("Liza")
+    hr1.getSalary(junior)
+
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    val range = 1..100
+//    var sum = 0
+//    for (n in range) {
+//        sum += n
+//    }
+//    println(sum)
+
 // дз на 22.06
 //    val string = "F2p)v\"y233{0->c}ttelciFc"
 //    val stringLenght = string.length
